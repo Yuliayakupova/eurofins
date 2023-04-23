@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "a7101494-331c-4ae1-b594-022dbc8a8235",
+		"name": "Genomics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ip/123.123.123.123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ip",
+						"123.123.123.123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "university",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/university?country=Latvia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"university"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Latvia"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
